@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 export default function Navbar(props) {
   return (
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">{props.title}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +43,7 @@ Navbar.propTypes = {
              features : PropTypes.string.isRequired
                 }
 Navbar.defaultProps = {
-    
-
              title : 'Set title here',
              Pricing : 'Set pricing',
              features: "Set features"
-    
             }
